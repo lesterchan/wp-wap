@@ -1,4 +1,29 @@
-wp-wap
-======
+# WP-Wap
+Contributors: GamerZ
+Donate link: http://lesterchan.net/wordpress
+Tags: wap, wp-wap, handphone, pda, wml, phone
+Requires at least: 2.1
+Stable tag: trunk
 
 Browse your WordPress's blog entries on a WAP enabled mobile phone.
+
+## Description
+
+All the information (general, changelog, installation, upgrade, usage) you need about this plugin can be found here: [WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme").
+It is the exact same readme.html is included in the zip package.
+
+## Development Blog
+
+[GaMerZ WordPress Plugins Development Blog](http://lesterchan.net/wordpress/ "GaMerZ WordPress Plugins Development Blog")
+
+## Installation
+
+[WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme") (Installation Tab)
+
+## Screenshots
+
+[WP-Wap Screenshots](http://lesterchan.net/wordpress/screenshots/browse/wp-wap/ "WP-Wap Screenshots")
+
+## Frequently Asked Questions
+
+[WP-Wap Support Forums](http://forums.lesterchan.net/index.php?board=22.0 "WP-Wap Support Forums")
