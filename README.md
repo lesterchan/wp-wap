@@ -22,7 +22,10 @@ It is the exact same readme.html is included in the zip package.
 
 ## Screenshots
 
-[WP-Wap Screenshots](http://lesterchan.net/wordpress/screenshots/browse/wp-wap/ "WP-Wap Screenshots")
+1. Blog
+2. Blog - Single Post
+3. Blog - Post With Comments
+4. Blog Viewed On Wapsilon
 
 ## Frequently Asked Questions
 
