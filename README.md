@@ -20,6 +20,20 @@ It is the exact same readme.html is included in the zip package.
 
 [WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme") (Installation Tab)
 
+## Changelog
+###Version 2.30 (01-01-2008)
+NEW: Uses /wp-wap/ Folder Instead Of /wap/
+NEW: Rename wp-wap.php To wap.php
+NEW: Rename wp-wap-comments.php To wap-comments.php
+
+### Version 2.10 (01-02-2007)
+NEW: Compatible With WordPress 2.1 Also
+NEW: Added Next/Previous Posts Link
+
+### Version 2.00 (01-01-2006)
+NEW: Compatible With WordPress 2.0
+NEW: Uses WAP 2.0
+
 ## Screenshots
 
 1. Blog
