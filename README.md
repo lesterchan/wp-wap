@@ -8,16 +8,16 @@ Stable tag: trunk
 [DEPRECATED] Browse your WordPress's blog entries on a WAP enabled mobile phone.
 
 ## Description
-
 All the information (general, changelog, installation, upgrade, usage) you need about this plugin can be found here: [WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme").
 It is the exact same readme.html is included in the zip package.
 
-## Development Blog
+### Build Status
+[![Build Status](https://travis-ci.org/lesterchan/wp-wap.svg?branch=master)](https://travis-ci.org/lesterchan/wp-wap)
 
+### Development Blog
 [GaMerZ WordPress Plugins Development Blog](http://lesterchan.net/wordpress/ "GaMerZ WordPress Plugins Development Blog")
 
 ## Installation
-
 [WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme") (Installation Tab)
 
 ## Changelog
