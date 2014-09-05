@@ -8,17 +8,19 @@ Stable tag: trunk
 [DEPRECATED] Browse your WordPress's blog entries on a WAP enabled mobile phone.
 
 ## Description
-All the information (general, changelog, installation, upgrade, usage) you need about this plugin can be found here: [WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme").
-It is the exact same readme.html is included in the zip package.
+Browse your WordPress's blog entries on a WAP enabled mobile phone.
 
 ### Build Status
 [![Build Status](https://travis-ci.org/lesterchan/wp-wap.svg?branch=master)](https://travis-ci.org/lesterchan/wp-wap)
 
-### Development Blog
-[GaMerZ WordPress Plugins Development Blog](http://lesterchan.net/wordpress/ "GaMerZ WordPress Plugins Development Blog")
+### Development
+[https://github.com/lesterchan/wp-wap](https://github.com/lesterchan/wp-wap "https://github.com/lesterchan/wp-wap")
 
-## Installation
-[WP-Wap Readme](http://lesterchan.net/wordpress/readme/wp-wap.html "WP-Wap Readme") (Installation Tab)
+### Credits
+* Plugin icon by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com)
+
+### Donations
+I spent most of my free time creating, updating, maintaining and supporting these plugins, if you really love my plugins and could spare me a couple of bucks, I will really appericiate it. If not feel free to use it without any obligations.
 
 ## Changelog
 ###Version 2.30 (01-01-2008)
@@ -40,7 +42,3 @@ NEW: Uses WAP 2.0
 2. Blog - Single Post
 3. Blog - Post With Comments
 4. Blog Viewed On Wapsilon
-
-## Frequently Asked Questions
-
-[WP-Wap Support Forums](http://forums.lesterchan.net/index.php?board=22.0 "WP-Wap Support Forums")
