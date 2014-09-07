@@ -1,38 +1,24 @@
 <?php
-/*
-+----------------------------------------------------------------+
-|																							|
-|	WordPress 2.1 Plugin: WP-Wap 2.30										|
-|	Copyright (c) 2007 Lester "GaMerZ" Chan									|
-|																							|
-|	File Written By:																	|
-|	- Lester "GaMerZ" Chan															|
-|	- http://lesterchan.net															|
-|																							|
-|	File Information:																	|
-|	- WAP Friendly Page	For Blog Comments									|
-|	- wap-comments.php															|
-|																							|
-+----------------------------------------------------------------+
-*/
+### Tells WordPress to load the WordPress theme and output it.
+define( 'WP_USE_THEMES', false );
 
+### Loads the WordPress Environment and Template
+require( './wp-blog-header.php' );
 
-### We Need RSS
-if (empty($wp)) {
-	require_once('wp-config.php');
-	wp('feed=rss');
-}
+### Remove WordPress Footer
+remove_all_actions( 'wp_footer' );
+remove_all_actions( 'loop_end' );
 
 ### Set Header To WML
-header('Content-Type: text/vnd.wap.wml;charset=utf-8');
+header( 'Content-Type: text/vnd.wap.wml;charset=utf-8' );
 
 ### Get Post ID
-$p = intval($_GET['p']);
+$id = intval($_GET['id']);
 
 ### If $p Is Not Empty
-if ($p > 0) {
-	$comments = $wpdb->get_results("SELECT comment_ID, comment_author, comment_author_email, comment_author_url, comment_date,	comment_content, comment_post_ID, $wpdb->posts.ID, $wpdb->posts.post_password FROM $wpdb->comments LEFT JOIN $wpdb->posts ON comment_post_ID = ID WHERE comment_post_ID = '$p' AND $wpdb->comments.comment_approved = '1' AND $wpdb->posts.post_status = 'publish' AND post_date < '".current_time('mysql')."' ORDER BY comment_date");
-	$post = $wpdb->get_row("SELECT post_title, comment_status FROM $wpdb->posts WHERE ID = '$p' AND post_date < post_date < '".current_time('mysql')."' AND post_status = 'publish'");
+if ($id > 0) {
+	$comments = $wpdb->get_results("SELECT comment_ID, comment_author, comment_author_email, comment_author_url, comment_date,	comment_content, comment_post_ID, $wpdb->posts.ID, $wpdb->posts.post_password FROM $wpdb->comments LEFT JOIN $wpdb->posts ON comment_post_ID = ID WHERE comment_post_ID = '$id' AND $wpdb->comments.comment_approved = '1' AND $wpdb->posts.post_status = 'publish' AND post_date < '".current_time('mysql')."' ORDER BY comment_date");
+	$post = $wpdb->get_row("SELECT post_title, comment_status FROM $wpdb->posts WHERE ID = '$id' AND post_date < post_date < '".current_time('mysql')."' AND post_status = 'publish'");
 ### Else Display Last 10 Comments
 } else {
 	$comments = $wpdb->get_results("SELECT comment_ID, comment_author, comment_author_email, comment_author_url, comment_date, comment_content, comment_post_ID, $wpdb->posts.ID, $wpdb->posts.post_password FROM $wpdb->comments LEFT JOIN $wpdb->posts ON comment_post_id = id WHERE $wpdb->posts.post_status = 'publish' AND $wpdb->comments.comment_approved = '1' AND post_date < '".current_time('mysql')."' ORDER BY comment_date DESC LIMIT 10");
@@ -55,7 +41,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 			<br />
 	<?php endforeach; ?>
 <?php else : ?>
-	<?php if ('open' == $post->comment_status) : ?> 
+	<?php if ('open' === $post->comment_status) : ?> 
 		<p>No Comments Are Posted Yet.</p>
 	<?php else : ?>
 		<p>Comments Are Closed.</p>
